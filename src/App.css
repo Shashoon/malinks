@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  padding: 0;
+  background-color: black;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  padding: 0;
+  width: 100vw;
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  width: 95%;
+  max-width: 788px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px;
+  margin-top: 15px;
+}
+
+.mail-button {
+  width: 45px;
+  height: 45px;
+  margin: 10px 8px;
+  border-radius: 23px;
+  background-color: rgb(216 216 216);
+}
+
+.mail-button svg {
+  margin-left: 6px;
+  margin-top: 9px;
+  color: black;
+}
+
+.share-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.share-button svg {
+  margin-left: 5px;
+  margin-top: 7px;
+  color: black;
+}
+
+.container {
+  width: 91%;
+  max-width: 780px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  overflow: hidden;
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 25px;
+  margin-bottom: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.link {
+  width: 100%;
+  background-color: rgb(37, 37, 37);
+  margin: 7px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link:hover {
+  transition: cubic-bezier(0.7, 1.41, 0.82, 1.41) 0.2s;
+  transform: scale(1.02);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 12px;
+}
+
+.link-share-button {
+  width: 40px;
+  height: 40px;
+  margin: 10px 8px;
+  border-radius: 20px;
+  background-color: rgb(52, 52, 52);
+}
+
+.link-share-button svg {
+  margin-left: 8px;
+  margin-top: 6px;
+}
+
+#popup {
+  display: none;
+  position: absolute;
+  bottom: 260px;
+  padding: 4px 10px;
+  background-color: white;
+  border-radius: 8px;
+  color: black;
+}
+
+.footer {
+  position: absolute;
+  bottom: 5%;
 }
