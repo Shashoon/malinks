@@ -57,6 +57,10 @@ input::placeholder {
   color: whitesmoke;
 }
 
+input:focus::placeholder {
+  color: #f29766;
+}
+
 .form-input .bar {
   position: absolute;
   background-color: rgb(216 216 216);
